@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <title>WeatherWizard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1 class="animate__animated animate__bounceIn">
+                <i class="fas fa-cloud-sun-rain"></i> WeatherWizard
+            </h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="city-input-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="weather-info" class="animate__animated animate__fadeIn">
+                <h2 id="city-name"></h2>
+                <p id="date"></p>
+                <div class="weather-display">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <p id="temperature"></p>
+                </div>
+                <p id="description"></p>
+                <div class="additional-info">
+                    <p id="wind-speed"><i class="fas fa-wind"></i> <span></span></p>
+                    <p id="humidity"><i class="fas fa-tint"></i> <span></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
